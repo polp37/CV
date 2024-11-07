@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-color: #f0f4f8;
+}
+
+
+.form-container {
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 0 0 5px;
+    color: #555555;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #377f3a;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(135, 206, 250, 0.5);
+    animation: move 10s infinite;
+    opacity: 0;
+}
+
+@keyframes move {
+    0% {
+        opacity: 0.5;
+        transform: translate(0, 0);
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    22% {
+        opacity: 0;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+        transform: translate(40vw, -40vh);
+    }
+
+    55% {
+        opacity: 1;
+    }
+
+    57% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+        transform: translate(40vw, 20vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(80vw, 80vh);
+
+    }
+}
+
+
+.circle:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    left: 10%;
+    animation-duration: 8s;
+}
+
+.circle:nth-child(2) {
+    width: 70px;
+    height: 70px;
+    top: 40%;
+    left: 20%;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+.circle:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    top: 60%;
+    left: 30%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+.circle:nth-child(4) {
+    width: 90px;
+    height: 90px;
+    top: 10%;
+    left: 60%;
+    animation-duration: 14s;
+    animation-delay: 3s;
+}
+
+.circle:nth-child(5) {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 80%;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+
+
+
+.circle:nth-child(6) {
+    width: 50px;
+    height: 50px;
+    bottom: 20%;
+    right: 10%;
+    animation: moveLeft 10s infinite;
+}
+
+.circle:nth-child(7) {
+    width: 70px;
+    height: 70px;
+    bottom: 40%;
+    right: 20%;
+    animation: moveLeft 7s infinite;
+    animation-delay: 2s;
+}
+
+.circle:nth-child(8) {
+    width: 30px;
+    height: 30px;
+    bottom: 60%;
+    right: 30%;
+    animation: moveLeft 14s infinite;
+    animation-delay: 1s;
+}
+
+.circle:nth-child(9) {
+    width: 90px;
+    height: 90px;
+    bottom: 10%;
+    right: 60%;
+    animation: moveLeft 10s infinite;
+    animation-delay: 3s;
+}
+
+.circle:nth-child(10) {
+    width: 40px;
+    height: 40px;
+    bottom: 50%;
+    right: 80%;
+    animation: moveLeft 6s infinite;
+    animation-delay: 5s;
+}
+
+
+@keyframes moveLeft {
+    0% {
+        opacity: 0.5;
+        transform: translate(0, 0);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translate(-20vw, 20vh);
+    }
+
+    50% {
+        transform: translate(-40vw, -50vh);
+    }
+
+    60% {
+        transform: translate(-30vw, -50vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-100vw, -100vh);
+    }
+
+}
+
+
+.fusee {
+    position: absolute;
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    bottom: 0%;
+    right: 70%;
+}
+
+.fusee:hover {
+    animation: move_cube 2s infinite;
+}
+
+@keyframes move_cube {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0vw, -200vh);
+    }
+}
