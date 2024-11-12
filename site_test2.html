@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page YouTube - Vidéo</title>
+    <link rel="stylesheet" href="site_test2.css">
+</head>
+<body>
+    <!-- En-tête de la page YouTube -->
+    <header class="header">
+        <div class="logo">YouTube</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher...">
+            <button>🔍</button>
+        </div>
+        <div class="profile">👤</div>
+    </header>
+
+    <div class="container">
+        <!-- Vidéo principale -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/6sWHwyHoEa4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-title">
+                <h2>Titre de la vidéo</h2>
+                <p>1M vues • Publiée le 1 janvier 2024</p>
+            </div>
+        </div>
+
+        <!-- Contenu -->
+        <div class="content">
+            <!-- Section des commentaires -->
+            <div class="video-details">
+                <h3>Description de la vidéo</h3>
+                <p>Cette vidéo est un exemple d'une page YouTube créée avec HTML et CSS.</p>
+
+                <div class="comments">
+                    <h3>Commentaires</h3>
+                    <div class="comment">
+                        <p><strong>Utilisateur1 :</strong> Très bonne vidéo !</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>Utilisateur2 :</strong> J'adore ce tutoriel, très utile !</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>Utilisateur3 :</strong> C'est clair et bien expliqué.</p>
+                    </div>
+                    <!-- Formulaire de commentaire -->
+                    <textarea placeholder="Ajouter un commentaire..."></textarea>
+                    <button>Publier</button>
+                </div>
+            </div>
+
+            <!-- Vidéos suggérées -->
+            <div class="suggested-videos">
+                <h3>Vidéos suggérées</h3>
+                <div class="video-card">
+                    <img src="https://via.placeholder.com/150" alt="Thumbnail">
+                    <p>Vidéos recommandée 1</p>
+                </div>
+                <div class="video-card">
+                    <img src="https://via.placeholder.com/150" alt="Thumbnail">
+                    <p>Vidéos recommandée 2</p>
+                </div>
+                <div class="video-card">
+                    <img src="https://via.placeholder.com/150" alt="Thumbnail">
+                    <p>Vidéos recommandée 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
